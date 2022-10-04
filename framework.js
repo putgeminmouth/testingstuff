@@ -9,7 +9,7 @@ const Option = x => {
 
 class ProxyFactory {
 	#all = [];
-	#dirty = {};
+	#unclean = {};
 	#options = {};
 	#events = new EventTarget();
 	#eventsById = {};
@@ -18,35 +18,35 @@ class ProxyFactory {
 	}
 
 	markDirty(d) {
-		this.#dirty[d.id] = d;
-		if (d) {
-			this.events.dispatchEvent(Object.assign(new Event('dirty'), {data:d}));
-			this.eventsById[d.id]?.events.dispatchEvent(Object.assign(new Event('dirty'), {data:d}));
-		}
+		// this.#unclean[d.id] = d;
+		// if (d) {
+		// 	this.events.dispatchEvent(Object.assign(new Event('unclean'), {data:d}));
+		// 	this.eventsById[d.id]?.events.dispatchEvent(Object.assign(new Event('unclean'), {data:d}));
+		// }
 	}
 
 	clearDirty() {
-		const d = this.#dirty;
-		this.#dirty = {};
+		const d = this.#unclean;
+		this.#unclean = {};
 		return d;
 	}
 
 	watchDirty(id, listener) {
 		this.#eventsById[id] = this.#eventsById[id] || { count: 0, events: new EventTarget() };
-		this.#eventsById[id].events.addEventListener('dirty', listener);
+		this.#eventsById[id].events.addEventListener('unclean', listener);
 		this.#eventsById[id].count++;
 		if (!this.#all.find(x => x.deref()?.id === id))
 			delete this.#eventsById[id];
 	}
 	unwatchDirty(id, listener) {
 		if (this.#eventsById[id]) {
-			this.#eventsById[id].events.removeEventListener('dirty', listener);
+			this.#eventsById[id].events.removeEventListener('unclean', listener);
 			if (--this.#eventsById[id].count < 1)
 				delete this.#eventsById[id];
 		}
 	}
 
-	get dirty() { return this.#dirty; }
+	get unclean() { return this.#unclean; }
 	get all() { return this.#all.map(x => x.deref()).filter(x => x !== undefined); }
 	get events() { return this.#events; }
 	get eventsById() { return this.#eventsById; }
@@ -129,11 +129,11 @@ class DirtyUpdater {
 	updateFromFactory(proxyFactory) {
 		this.update(proxyFactory.clearDirty());
 	}
-	update(dirty) {
+	update(unclean) {
 		const before = Date.now();
 
-		const objRefs = Object.keys(dirty)
-			.map(id => ({obj: dirty[id], refs: Array.from(this.#selectById(id))}));
+		const objRefs = Object.keys(unclean)
+			.map(id => ({obj: unclean[id], refs: Array.from(this.#selectById(id))}));
 		objRefs.push({obj: {id:''}, refs: Array.from(this.#selectAny())});
 		const defaultContentRenderer = (n, d) => {
 			if (n.getAttribute('data-nf-tpl')) return this.#template.compile(n.getAttribute('data-nf-tpl'), d);
@@ -212,7 +212,7 @@ const setup = () => {
 	const template = new Template();
 	const updater = new DirtyUpdater(template);
 	const idFactory = new IdFactory();
-	proxyFactory.events.addEventListener('dirty', () => debouncer.debounce(() => updater.updateFromFactory(proxyFactory)));
+	proxyFactory.events.addEventListener('unclean', () => debouncer.debounce(() => updater.updateFromFactory(proxyFactory)));
 	return {
 		proxyFactory,
 		debouncer,
