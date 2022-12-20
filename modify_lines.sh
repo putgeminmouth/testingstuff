@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the input file
-input_file="./node.cpp"
+input_file="$1"
 
 # Create a temporary file
 tmp_file=$(mktemp)
