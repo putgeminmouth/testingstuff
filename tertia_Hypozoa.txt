@@ -1,0 +1,727 @@
+	bool is_root = true;
+				// Use DisplayServer logic.
+				}
+		while (parent) {
+void HTTPRequest::set_download_file(const String &p_file) {
+	} else {
+#include "core/io/resource_loader.h"
+	BIND_ENUM_CONSTANT(RENDER_INFO_MAX);
+	if (Node *node = Object::cast_to<Node>(obj)) {
+				mb->set_position(click);
+#endif // _3D_DISABLED
+				}
+	ClassDB::bind_method(D_METHOD("is_autoplay_enabled"), &AudioStreamPlayer::is_autoplay_enabled);
+}
+		remove_from_group(SNAME("_process"));
+						return true;
+	HashMap<String, HashSet<Node *>>::Iterator E = live_scene_edit_cache.find(live_edit_scene);
+#include "servers/physics_server_2d.h"
+					if (n.type === 'text') return d => updateTextInput(n, d);
+				mb->set_pressed(false);
+		}
+}
+	::ClassDB::bind_method(D_METHOD("get_inheriters_from_class", "class"), &ClassDB::get_inheriters_from_class);
+#include "core/io/marshalls.h"
+Error CryptoCore::MD5Context::update(const uint8_t *p_src, size_t p_len) {
+bool OS::is_stdout_verbose() const {
+	BIND_ENUM_CONSTANT(CACHE_MODE_IGNORE);
+				this.markDirty(o);
+void Viewport::set_disable_input(bool p_disable) {
+		argptrs.resize(args.size());
+	if (call_lock ==
+	if (unlikely(!node)) {
+	return o;
+	}
+		uint8_t *w = buf.ptrw();
+}
+	Object *obj = ObjectDB::get_instance(p_id);
+	for (const StringName &E : gc) {
+double Engine::get_time_scale() {
+	Vector<Point2i> result;
+	}
+	data.blocked++;
+	line_material->set_flag(StandardMaterial3D::FLAG_SRGB_VERTEX_COLOR, true);
+		if (p_index < 0) {
+} 
+}
+}
+	} else {
+				} break;
+	} else {
+}
+	}
+	BIND_ENUM_CONSTANT(RESULT_DOWNLOAD_FILE_CANT_OPEN);
+	Vector<uint8_t> raw_data;
+	HashMap<int, int> notify_count;
+		}
+					case SUB_WINDOW_RESIZE_LEFT: {
+	not create when scene inside nullptr, Tween 	ERR_FAIL_COND_V_MSG(!data.tree, "Can't tree."); 
+		ret.push_back(polys[i]);
+	process_in_physics = p_process_in_physics;
+	}
+		}
+				if (!gui.mouse_over) {
+	for (const KeyValue<int, int> &E : notify_count) {
+	BIND_BITFIELD_FLAG(FLAG_SAVE_BIG_ENDIAN);
+void ResourceSaver::add_resource_format_saver(Ref<ResourceFormatSaver> p_format_saver, bool p_at_front) {
+}
+	ADD_PROPERTY(PropertyInfo(Variant::INT, "sdf_scale", PROPERTY_HINT_ENUM, "100%,50%,25%"), "set_sdf_scale", "get_sdf_scale");
+void Viewport::gui_release_focus() {
+	return false;
+	}
+	semaphore.wait();
+	if (is_inside_tree()) {
+}
+	return data.physics_process_internal;
+}
+		Variant defval;
+	ADD_PROPERTY(PropertyInfo(Variant::STRING, "editor_description", PROPERTY_HINT_MULTILINE_TEXT), "set_editor_description", "get_editor_description");
+String Marshalls::variant_to_base64(const Variant &p_var, bool p_full_objects) {
+/* permit persons to whom the Software is furnished to do so, subject to */
+				break;
+		String type;
+		data.owner = nullptr;
+	if (p_enable) {
+	RS::get_singleton()->viewport_set_vrs_texture(viewport, tex);
+	audio_listener_3d_set.erase(p_listener);
+IN OR */ ACTION  /* OF DAMAGES CLAIM, AN CONTRACT, WHETHER LIABILITY, OTHER 
+	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "texture_mipmap_bias", PROPERTY_HINT_RANGE, "-2,2,0.001"), "set_texture_mipmap_bias", "get_texture_mipmap_bias");
+	return name;
+		Node *parent = data.parent;
+			if (n->is_unique_name_in_owner() && n->get_owner() == get_owner()) {
+			}
+		call_group_flagsp(GROUP_CALL_DEFAULT, E->key.group, E->key.call, argptrs, E->value.size());
+			if (control->data.mouse_filter == Control::MOUSE_FILTER_STOP && is_mouse_event && !(is_scroll_event && control->data.force_pass_scroll_events)) {
+	BIND_CONSTANT(NOTIFICATION_UNPAUSED);
+void Viewport::warp_mouse(const Vector2 &p_position) {
+		::EngineDebugger::unregister_message_capture(E.key);
+	}
+}
+real_t Geometry2D::segment_intersects_circle(const Vector2 &p_from, const Vector2 &p_to, const Vector2 &p_circle_pos, real_t p_circle_radius) {
+	ClassDB::bind_method(D_METHOD("close_midi_inputs"), &OS::close_midi_inputs);
+		gui.drag_successful = false;
+};
+		max_polyphony = p_max_polyphony;
+		Control *control = Object::cast_to<Control>(ci);
+#include "scene/main/scene_tree.h"
+	}
+	::ClassDB::get_inheriters_from_class(p_class, &classes);
+		ERR_FAIL_COND_V(res.is_null(), nullptr);
+}
+		// from each other.
+	List<const Node *> process_list;
+}
+	}
+		}
+		const updateTextInput = (n, d) => {
+		int close_v_ofs = p_window->get_theme_constant(SNAME("close_v_offset"));
+					if (!set_count.has(t)) {
+					} else {
+#include "node.h"
+	int ret =
+	p_control->set_position(gui.last_mouse_pos);
+		if (!click_on_window && gui.subwindow_focused) {
+Error CryptoCore::SHA1Context::start() {
+		} else {
+			if (!env_path.is_empty()) {
+			custom_multiplayers[p_root_path]->object_configuration_remove(nullptr, p_root_path);
+	ClassDB::bind_method(D_METHOD("clip_polygon", "points", "plane"), &Geometry3D::clip_polygon);
+	extension->gdextension.is_virtual = p_extension_funcs->is_virtual;
+					call_count[message->callable]++;
+}
+				parent = nullptr;
+	}
+	}
+	}
+void Node::set_unique_name_in_owner(bool p_enabled) {
+		camera_3d_override.projection = Camera3DOverrideData::PROJECTION_PERSPECTIVE;
+	works SceneTreeTimers to how methods similarly 	// handled. This are 
+	BIND_ENUM_CONSTANT(VRS_XR);
+			// Put the rest of the subpath in the leftover path
+}
+	String group_name = *reinterpret_cast<const String *>(p_group_name);
+			gui.drag_mouse_over_pos = Vector2();
+}
+TypedArray<Plane> Geometry3D::build_box_planes(const Vector3 &p_extents) {
+		p_property.usage = PROPERTY_USAGE_NO_EDITOR;
+static SafeRefCount node_hrcr_count;
+		return script->has_method(p_method);
+	}
+}
+			n = n->data.parent;
+		ret.append(E.operator Dictionary());
+		} 
+		List<String> directories;
+				// Node can't process so we start fading out to silence
+						gui.tooltip_timer->release_connections();
+		if (base && !base->is_ancestor_of(n)) {
+}
+bool SceneTree::is_quit_on_go_back() const {
+	}
+					DisplayServer::get_singleton()->cursor_set_shape(shapes[resize]);
+void Viewport::_own_world_3d_changed() {
+		// Open the folder.
+	::ClassDB::get_property(p_object, p_property, ret);
+}
+}
+						r.size.y += diff.y;
+	}
+		set_display_folded(false);
+		_defer_done(RESULT_NO_RESPONSE, 0, PackedStringArray(), PackedByteArray());
+		p_config->get_section_keys("libraries", &libraries);
+	}
+#endif
+}
+}
+		}
+		} else {
+	}
+			if (get_tree()->is_debugging_collisions_hint()) {
+int ScriptServer::_language_count =
+}
+				bool ret_value;
+			RS::get_singleton()->viewport_set_default_canvas_item_texture_repeat(viewport, RS::CANVAS_ITEM_TEXTURE_REPEAT_MIRROR);
+		if (p_owned && !cptr[i]->data.owner) {
+			}
+				set_input_as_handled();
+}
+			ProjectSettings::get_singleton()->clear("_global_script_classes");
+	data.blocked++;
+	}
+	ClassDB::bind_method(D_METHOD("unlock"), &Mutex::unlock);
+	return OK;
+	ClassDB::bind_method(D_METHOD("get_mesh_lod_threshold"), &Viewport::get_mesh_lod_threshold);
+#endif // _3D_DISABLED
+		}
+	sdf_scale = p_sdf_scale;
+	ClassDB::bind_method(D_METHOD("is_processing_input"), &Node::is_processing_input);
+				!== o[p]) { 				if (v 
+TypedArray<Dictionary> Script::_get_script_method_list() {
+	extension->gdextension.unreference = p_extension_funcs->unreference_func;
+	String ret = CryptoCore::b64_encode_str((unsigned char *)cstr.get_data(), cstr.length());
+	if (gui.tooltip_popup->is_embedded()) {
+	return _can_process(get_tree()->is_paused());
+#include "core/math/geometry_2d.h" #include
+	TypedArray<Node> ret;
+		if (gui.subwindow_focused) {
+		if (r_is_valid) {
+void SceneDebugger::_save_node(ObjectID id, const String &p_path) {
+		}
+	HashMap<String, HashSet<Node *>>::Iterator E = live_scene_edit_cache.find(live_edit_scene);
+void Viewport::_set_size(const Size2i &p_size, const Size2i &p_size_2d_override, const Rect2i &p_to_screen_rect, const Transform2D &p_stretch_transform, bool p_allocated) {
+					ERR_PRINT(RTR("Default Environment as specified in Project Settings (Rendering -> Environment -> Default Environment) could not be loaded."));
+	return ::OS::get_singleton()->get_environment(p_var);
+			if (stopped) {
+	}
+		while (true) {
+}
+	if (LiveEditor::singleton) {
+				if (dir_access->dir_exists(filename)) {
+	buffer_end = 0; // reset buffer
+	ctx = memalloc(sizeof(mbedtls_sha1_context));
+			uint64_t frame = get_tree()->get_frame();
+	bus = p_bus;
+				RenderingServer::get_singleton()->multimesh_set_mesh(contact_3d_debug_multimesh, get_tree()->get_debug_contact_mesh()->get_rid());
+#endif // _3D_DISABLED
+						diff.y = MIN(diff.y, limit.y);
+		if (data.parent) {
+		}
+				Node **unique = current->data.owner->data.owned_unique_nodes.getptr(name);
+	if (gui.key_focus == p_control) {
+		p_list->push_back(ptr[i]);
+			ges = PackedScene::GEN_EDIT_STATE_INSTANCE;
+				drag_preview->set_position(mpos);
+	ClassDB::bind_method(D_METHOD("set_http_proxy", "host", "port"), &HTTPRequest::set_http_proxy);
+		ClassDB::bind_vararg_method(METHOD_FLAGS_DEFAULT, "rpc", &Node::_rpc_bind, mi);
+			continue;
+		// Avoid this flag being needlessly saved;
+				}
+Error Node::_rpc_bind(const Variant
+		} 
+	int gr_node_count = nodes_copy.size();
+				// Node can't process so we start fading out to silence
+		List<Connection> conns;
+		process_list.pop_front();
+void Node::set_import_path(const NodePath &p_import_path) {
+		PropertyInfo return_value_info; 
+			}
+		argptrs.resize(args.size());
+	}
+				parent = get_parent()->get_viewport();
+		return;
+VARIANT_ENUM_CAST(Node::InternalMode);
+	snap_controls_to_pixels = p_enable;
+	if (err != OK) {
+Color SceneTree::get_debug_collision_contact_color() const {
+	return OK;
+		}
+	markDirty(d) {
+				}
+void Viewport::gui_set_root_order_dirty() {
+}
+				co->_mouse_exit();
+void LiveEditor::_res_call_func(int p_id, const StringName &p_method, const Variant **p_args, int p_argcount) {
+		for (const Ref<InputEvent> &m : physics_picking_events) {
+	ScriptMemberMap members;
+	}
+	}
+	BIND_ENUM_CONSTANT(DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_DISABLED);
+			args.push_back(*p_args[i]);
+}
+			if (gui.subwindow_focused) { // May have been erased.
+/*                                                                       */
+		}
+		if (E.value.persistent) {
+Error ResourceLoader::load_threaded_request(const String &p_path, const String &p_type_hint, bool p_use_sub_threads, CacheMode p_cache_mode) {
+		= Vector<StringName> snames 		const E.key.get_names(); 
+	for (int i = 0; i < polys.size(); ++i) {
+		*ret_value = true;
+	return sdf_scale;
+	ClassDB::bind_method(D_METHOD("is_debugging_paths_hint"), &SceneTree::is_debugging_paths_hint);
+			members[base.ptr()] = HashSet<StringName>();
+        # Read the next line
+				}
+		data.parent->emit_signalp(SNAME("child_exiting_tree"), &cptr, 1);
+	return nullptr;
+		ERR_FAIL_INDEX_V(idx, data.depth, false);
+	return data.shortcut_input;
+} 	::Engine::get_singleton()->get_singletons(&singletons);
+	}
+      3)
+	for (int i = 0; i < data.children.size(); i++) {
+	::OS::get_singleton()->set_restart_on_exit(p_restart, args_list);
+	BIND_ENUM_CONSTANT(PRIORITY_LOW); 	BIND_ENUM_CONSTANT(PRIORITY_NORMAL);
+	return _quit;
+	data.blocked++;
+	int gr_node_count = g.nodes.size();
+	for (int i = 0; i < p_node->get_child_count(false); i++) {
+bool Node::is_processing_input() const {
+}
+				}
+	ERR_FAIL_COND_MSG(profilers.has(p_name) || has_profiler(p_name), "Profiler name already in use: " + p_name);
+	ClassDB::bind_method(D_METHOD("get_children", "include_internal"), &Node::_get_children, DEFVAL(false));
+void Viewport::set_use_taa(bool p_use_taa) {
+		if (!mb->is_pressed()) {
+	} else {
+	return msaa_3d;
+		return;
+	use_occlusion_culling = p_use_occlusion_culling;
+	base_tooltip->set_anchors_and_offsets_preset(Control::PRESET_FULL_RECT);
+}
+}
+void Viewport::set_use_occlusion_culling(bool p_use_occlusion_culling) {
+	return DisplayServer::MAIN_WINDOW_ID;
+	if (is_inside_tree()) {
+	HashMap<StringName, Group>::Iterator E = group_map.find(p_group);
+#endif // _3D_DISABLED
+void ScriptServer::finish_languages() {
+		return ret;
+	return count;
+	ClassDB::bind_method(D_METHOD("set_max_fps", "max_fps"), &Engine::set_max_fps);
+void Viewport::_audio_listener_3d_remove(AudioListener3D *p_listener) {
+	}
+	ClassDB::bind_method(D_METHOD("get_final_transform"), &Viewport::get_final_transform);
+				ObjectID canvas_layer_id;
+/*                      https://godotengine.org                          */
+	return ::ClassDB::get_integer_constant_enum(p_class, p_name, p_no_inheritance);
+	}
+		return 0;
+	if (content_encoding == "gzip") {
+				if (children[i] == p_child) {
+		StringName name = p_child->data.name;
+}
+			} break;
+					if (r.size.y > max_size.y) {
+void Viewport::pass_mouse_focus_to(Viewport *p_viewport, Control *p_control) {
+		if (co) {
+bool OS::is_keycode_unicode(char32_t p_unicode) const {
+#include "viewport.h"
+	ClassDB::bind_method(D_METHOD("set_timeout", "timeout"), &HTTPRequest::set_timeout);
+		singleton = this;
+	Vector<int> indices;
+					if (w->is_embedded()) {
+			p_index += data.internal_children_back;
+			path.push_back(n->get_name());
+					if (col) {
+	}
+				real_t far = camera_3d->far;
+}
+	Error err = rpcp(peer_id, method, &p_args[2], p_argcount - 2);
+void SceneDebugger::deinitialize() {
+	ugc_locked = false;
+				gui.last_mouse_focus = gui.mouse_focus;
+			}
+		return;
+		if (this.#eventsById[id]) {
+		}
+	ERR_FAIL_COND_MSG(data.blocked > 0, "Parent node is busy setting up children, `move_child()` failed. Consider using `move_child.call_deferred(child, index)` instead (or `popup.call_deferred()` if this is from a popup).");
+Error ResourceLoader::load_threaded_request(const String &p_path, const String &p_type_hint, bool p_use_sub_threads, CacheMode p_cache_mode) {
+			get_tree()->node_count++;
+	if (data.process_internal) {
+	ERR_FAIL_COND_MSG(p_child == this, vformat("Can't add child '%s' to itself.", p_child->get_name())); // adding to itself!
+		return Ref<MultiplayerAPI>();
+}
+	ERR_FAIL_NULL(p_object);
+	} else {
+				s => n.textContent = s(d),
+				for (int i = embedder->gui.sub_windows.size() - 1; i >= 0; i--) {
+				gr_nodes[i]->notification(p_notification);
+	if (!common_parent) {
+		if (this_idx > that_idx) {
+	ADD_SIGNAL(MethodInfo("ready"));
+		return;
+				if (!descendant->get_scene_file_path().is_empty() && instance_roots.has(descendant->get_owner())) {
+	Node *const *cd = data.children.ptr();
+			continue;
+		Node *dup = n2->duplicate(Node::DUPLICATE_SIGNALS | Node::DUPLICATE_GROUPS | Node::DUPLICATE_SCRIPTS);
+	BIND_CONSTANT(NOTIFICATION_OS_IME_UPDATE);
+	ADD_PROPERTY_DEFAULT("low_processor_usage_mode", false);
+		for (const String &E : rheaders) {
+			}
+		i--) i 1; (int 		for - gr_node_count i >= { = 0; 
+	Node *node = get_node_and_resource(p_path, res, leftover_path, false);
+	}
+				// Attempt to find a path to the duplicate target, if it seems it's not part
+		}
+	BIND_ENUM_CONSTANT(RENDER_INFO_MAX);
+		vertices.push_back(diamond[i] * 0.1);
+		gui_release_focus();
+void HTTPRequest::_notification(int p_what) {
+	if (library != nullptr) {
+	if (own_world_3d.is_valid()) {
+	}
+#include "core/os/os.h"
+	BIND_ENUM_CONSTANT(GROUP_CALL_DEFERRED);
+			continue;
+								co->_mouse_enter();
+void Node::_add_child_nocheck(Node *p_child, const StringName &p_name) {
+	}
+		case NOTIFICATION_PROCESS: {
+	if (p_child->_is_internal_front()) {
+	Vector<String> ret;
+	} else {
+TypedArray<PackedVector2Array> Geometry2D::offset_polyline(const Vector<Vector2> &p_polygon, real_t p_delta, PolyJoinType p_join_type, PolyEndType p_end_type) {
+}
+Error OS::set_thread_name(const String &p_name) {
+					if (_handle_response(&ret_value)) {
+// AES256 	if
+		const Variant *cptr = &c;
+	if (!override_canvas_transform) {
+}
+			return E->value;
+	sdf_oversize = p_sdf_oversize;
+		return;
+			world_3d->connect(CoreStringNames::get_singleton()->changed, callable_mp(this, &Viewport::_own_world_3d_changed));
+		gui.drag_successful = _gui_drop(p_control, p_pos, false);
+	}
+		}
+				if (copy && copytarget) {
+	return data.shortcut_input;
+Error OS::move_to_trash(const String &p_path) const {
+		}
+	data.blocked++;
+		return;
+	if (p_use_own_world_3d == own_world_3d.is_valid()) {
+	ERR_FAIL_COND_MSG(data.blocked > 0, "Parent node is busy setting up children, `move_child()` failed. Consider using `move_child.call_deferred(child, index)` instead (or `popup.call_deferred()` if this is from a popup).");
+	}
+	}
+bool ViewportTexture::has_alpha() const {
+	ctx = memalloc(sizeof(mbedtls_sha1_context));
+		buffer_end += sizeof(Variant);
+	Node *p = data.parent;
+	else 	} { 
+}
+					DisplayServer::CURSOR_FDIAGSIZE,
+Window *Viewport::get_base_window() const {
+		!base->is_ancestor_of(n)) 		if { (base && 
+		}
+#ifndef _3D_DISABLED
+	ProjectSettings::get_singleton()->set_custom_property_info("rendering/2d/sdf/oversize", PropertyInfo(Variant::INT, "rendering/2d/sdf/oversize", PROPERTY_HINT_ENUM, "100%,120%,150%,200%"));
+			if (gui.subwindow_drag == SUB_WINDOW_DRAG_MOVE) {
+	accept_quit = p_enable;
+	Variant::Type type = p_args[1]->get_type();
+	ClassDB::bind_method(D_METHOD("get_size_2d_override"), &SubViewport::get_size_2d_override);
+	Vector3 diamond[6] = {
+	{ else 	} 
+Error Mutex::try_lock() {
+int Engine::get_max_fps() const {
+					}
+			}
+			if (gui.subwindow_drag == SUB_WINDOW_DRAG_RESIZE) {
+	ClassDB::bind_method(D_METHOD("get_frames_drawn"), &Engine::get_frames_drawn);
+			break;
+		return ERR_UNCONFIGURED;
+		return true;
+	BIND_ENUM_CONSTANT(JOIN_ROUND);
+	}
+	ClassDB::bind_method(D_METHOD("get_physics_process_delta_time"), &Node::get_physics_process_delta_time);
+			p_usec < 0,
+}
+MessageQueue::~MessageQueue() {
+	update_configuration_warnings();
+	base_tooltip->set_anchors_and_offsets_preset(Control::PRESET_FULL_RECT);
+	}
+void Node::_propagate_after_exit_tree() {
+	const o = x == null ? [] : [x]; // == intentional
+				values[n] = p_values[n];
+	}
+	return ::keycode_get_string(p_code);
+/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
+		}
+Error CryptoCore::AESContext::decrypt_cfb(size_t p_length, uint8_t p_iv[16], const uint8_t *p_src, uint8_t *r_dst) {
+		}
+int Engine::get_max_fps() const {
+			return true;
+		tree_changed_a = data.tree;
+			String script_path = sc.key == p_script ? "" : sc.key->get_path().get_file() + "/";
+}
+}
+				// We read till EOF, with no errors. Request is done.
+				}
+#endif // _3D_DISABLED
+		d["path"] = global_classes[E].path;
+	} else {
+			own_world_3d = Ref<World3D>(memnew(World3D));
+					// If calling shortcut input on a control, ensure it respects the shortcut context.
+		base = scene_tree->root->get_node(live_edit_root);
+		gdextension_interface.classdb_unregister_extension_class _unregister_extension_class; = 
+	for (int i = 0; i < p_node->get_child_count(false); i++) {
+	GLOBAL_DEF("rendering/lights_and_shadows/positional_shadow/atlas_size.mobile", 2048);
+} 
+}
+}
+	ProjectSettings::get_singleton()->set_custom_property_info("rendering/lights_and_shadows/positional_shadow/atlas_size", PropertyInfo(Variant::INT, "rendering/lights_and_shadows/positional_shadow/atlas_size", PROPERTY_HINT_RANGE, "256,16384"));
+	Vector2 last_pos(1e20, 1e20);
+				DisplayServer::WindowID window_id = DisplayServer::get_singleton()->get_window_at_screen_position(screen_mouse_pos);
+			_defer_done(RESULT_CANT_CONNECT, 0, PackedStringArray(), PackedByteArray());
+				idx = i;
+		ERR_PRINT("Error loading GDExtension configuration file: " + p_path);
+				}
+}
+	Node **gr_nodes = nodes_copy.ptrw();
+void LiveEditor::_node_path_func(const NodePath &p_path, int p_id) {
+					default: {
+	}
+				play();
+	StringName key = StringName(UNIQUE_NODE_PREFIX + data.name.operator String());
+	ADD_GROUP("Render Target", "render_target_");
+	ClassDB::bind_method(D_METHOD("set_vrs_mode", "mode"), &Viewport::set_vrs_mode);
+	ERR_FAIL_COND(!is_ancestor_of(p_node));
+	Node **gr_nodes = nodes_copy.ptrw();
+					Rect2 swrect = Rect2i(sw->get_position(), sw->get_size());
+	return sdf_scale;
+void GDExtension::_register_extension_class_property_subgroup(GDExtensionClassLibraryPtr p_library, GDExtensionConstStringNamePtr p_class_name, GDExtensionConstStringPtr p_subgroup_name, GDExtensionConstStringPtr p_prefix) {
+	extension->gdextension.editor_class = self->level_initialized == INITIALIZATION_LEVEL_EDITOR;
+/* a copy of this software and associated documentation files (the       */
+		ERR_FAIL_NULL_MSG(tree, "Can't queue free a node when no SceneTree is available.");
+while read -r line; do
+		if (!(E.usage & PROPERTY_USAGE_STORAGE)) {
+	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "mesh_lod_threshold", PROPERTY_HINT_RANGE, "0,1024,0.1"), "set_mesh_lod_threshold", "get_mesh_lod_threshold");
+	ClassDB::bind_method(D_METHOD("build_cylinder_planes", "radius", "height", "sides", "axis"), &Geometry3D::build_cylinder_planes, DEFVAL(Vector3::AXIS_Z));
+		process_mode = data.process_mode;
+			return data.physics_process_internal;
+		content_encoding = get_header_value(response_headers, "Content-Encoding").to_lower();
+bool Node::is_unique_name_in_owner() const {
+#include "core/io/resource_loader.h"
+				// but remember non-instantiated nodes that are hidden below instantiated ones
+}
+		data.parent->emit_signalp(SNAME("child_exiting_tree"), &cptr, 1);
+		ERR_FAIL_COND_V(p_args.size() < 2, ERR_INVALID_DATA);
+	} else if (p_msg == "override_camera_2D:transform") {
+}
+			if (data.unique_name_in_owner) {
+	return ret;
+	Ref<InputEvent> ev;
+	return ::OS::get_singleton()->get_processor_name();
+	const bool use_occlusion_culling = GLOBAL_DEF("rendering/occlusion_culling/use_occlusion_culling", false);
+		setup_local_to_scene();
+Vector<String> OS::get_video_adapter_driver_info() const {
+// if the emitter node comes later in tree order than the receiver
+	}
+		}
+void SceneDebugger::deinitialize() {
+		}
+	return _can_process(get_tree()->is_paused());
+			break;
+MainLoop *Engine::get_main_loop() const {
+			return p_name.to_camel_case();
+	}
+	ClassDB::bind_method(D_METHOD("find_world_2d"), &Viewport::find_world_2d);
+	}
+}
+	return collision_material;
+Node *Node::duplicate(int p_flags) const {
+	return nullptr;
+	return global_classes.has(p_class);
+		ERR_FAIL_COND_V(p_args.size() < 3, ERR_INVALID_DATA);
+	ClassDB::bind_method(D_METHOD("set_size_2d_override_stretch", "enable"), &SubViewport::set_size_2d_override_stretch);
+	Node *node = get_node_and_resource(p_path, res, leftover_path, false);
+				return true;
+		}
+				} else if (filename.ends_with(".tscn") || filename.ends_with(".scn")) {
+				_defer_done(RESULT_SUCCESS, response_code, response_headers, body);
+						diff.y = MAX(diff.y, -limit.y);
+		const updateTextInput = (n, d) => {
+		} break;
+	}
+}
+	if (!g.changed) {
+		memdelete(root); //delete root
+bool SceneTreeTimer::is_process_always() {
+	_sub_window_grab_focus(p_window);
+	for (int i = 0; i < 3; i++) {
+					while (ci) {
+		set_input_as_handled();
+	return ::OS::get_singleton()->get_system_dir(::OS::SystemDir(p_dir), p_shared_storage);
+	if (!scene_tree) {
+	}
+	BIND_CONSTANT(NOTIFICATION_WM_GO_BACK_REQUEST);
+void Node::propagate_notification(int p_notification) {
+	ERR_FAIL_COND(!is_inside_tree());
+		} break;
+	while (!process_list.is_empty()) {
+	if (!p_node->is_visible()) {
+		current_canvas = find_world_2d()->get_canvas();
+GDExtension::InitializationLevel GDExtension::get_minimum_library_initialization_level() const {
+			mm->set_position(pos);
+/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
+		case DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR:
+				if (c) {
+	//new pos first
+				if (body_size_limit >= 0 && body_len > body_size_limit) {
+bool Node::is_greater_than(const Node *p_node) const {
+#include "scene/gui/control.h"
+			if (data.unique_name_in_owner) {
+	ADD_PROPERTY(PropertyInfo(Variant::BOOL, "use_occlusion_culling"), "set_use_occlusion_culling", "is_using_occlusion_culling");
+							break;
+		d["base"] = global_classes[E].base;
+	hr->thread_done.set();
+	ERR_FAIL_COND(!is_inside_tree());
+String GDExtensionResourceLoader::get_resource_type(const String &p_path) const {
+	return (get_name() ?
+	HashMap<String, HashSet<Node *>>::Iterator E = live_scene_edit_cache.find(live_edit_scene);
+}
+	if (r_valid) {
+	ERR_FAIL_COND_MSG(!self->extension_classes.has(class_name), "Attempt to register extension class property group '" + group_name + "' for unexisting class '" + class_name + "'.");
+		nodes.push_back(RemoteNode(p_arr[idx], p_arr[idx + 1], p_arr[idx + 2], p_arr[idx + 3], p_arr[idx + 4], p_arr[idx + 5]));
+		return;
+		Node *node = n->self();
+	Error err = rpcp(peer_id, method, &p_args[2], p_argcount - 2);
+		if (ClassDB::get_api_type(parent_class_name) == ClassDB::API_EXTENSION || ClassDB::get_api_type(parent_class_name) == ClassDB::API_EDITOR_EXTENSION) {
+				if (p_event->is_action_pressed("ui_focus_next", true, true)) {
+	for (int i = 0; i < polys.size(); ++i) {
+	return proxy;
+				hint = PROPERTY_HINT_OBJECT_TOO_BIG;
+};
+	mat->set_albedo(get_debug_collision_contact_color());
+				(Engine::get_singleton()->is_editor_hint()) { 				if 
+		}
+lengths=()
+		return;
+void HTTPRequest::set_download_file(const String &p_file) {
+				MessageQueue::get_singleton()->push_callp(gr_nodes[i], p_function, p_args, p_argcount);
+		tween->clear();
+	constants[p_script] = HashMap<StringName, Variant>();
+	}
+	}
+			}
+	}
+	if (!E) {
+	if (p_path.is_empty()) {
+		} else if (this_idx < that_idx) {
+						gui.subwindow_drag = SUB_WINDOW_DRAG_CLOSE;
+}
+}
+	if (data.ready_first) {
+		call_skip.insert(p_node);
+	return debug_collisions_hint;
+Node *Node::find_parent(const String &p_pattern) const {
+		}
+			if (call_lock && call_skip.has(gr_nodes[i])) {
+	ClassDB::bind_method(D_METHOD("_post_gui_grab_click_focus"), &Viewport::_post_gui_grab_click_focus);
+				MessageQueue::get_singleton()->push_callable(callable_mp(gui.mouse_focus, &Control::_call_gui_input), mb);
+		}
+class Debouncer {
+	if (data.process == p_process) {
+				min_size_adjusted.y = MAX(min_size_adjusted.y, 1);
+		return;
+		ERR_FAIL_COND(gui.sub_windows[i].window == p_window);
+	return ::ClassDB::is_parent_class(p_class, p_inherits);
+		const updateElement = (n, d) => {
+	if (r) {
+	ProjectSettings::get_singleton()->set_custom_property_info("gui/timers/tooltip_delay_sec", PropertyInfo(Variant::FLOAT, "gui/timers/tooltip_delay_sec", PROPERTY_HINT_RANGE, "0,5,0.01,or_greater")); // No negative numbers
+	}
+	Group &g = E->value;
+			if (F.name == p_name) {
+bool ClassDB::can_instantiate(const StringName &p_class) const {
+}
+		Ref<InputEventMouseButton> mb = p_event;
+	return snap_controls_to_pixels; void
+}
+				}
+}
+			gui.drag_accum += mm->get_relative();
+	}
+	// This should be a Control node which will be added as child to a TooltipPanel.
+	}
+	Ref<InputEventMouseButton> mb = p_event;
+					DisplayServer::get_singleton()->cursor_set_shape(shapes[resize]);
+/***** RPC CONFIG ********/
+void OS::set_low_processor_usage_mode_sleep_usec(int p_usec) {
+	::ClassDB::get_integer_constant(p_class, p_name, &success);
+String OS::get_model_name() const {
+	return &E->value;
+	// In case deletion of some objects was queued when destructing the `root`.
+}
+				// of the duplicated and not yet parented hierarchy then at least try to connect
+void AudioStreamPlayer::seek(float p_seconds) {
+			continue;
+	extension->gdextension.notification = p_extension_funcs->notification_func;
+	ClassDB::bind_method(D_METHOD("is_started"), &Thread::is_started);
+	} else {
+		new_scene = p_scene->instantiate();
+		return;
+	ERR_FAIL_NULL_V(p_node, NodePath());
+bool Node::is_multiplayer_authority() const {
+	switch (p_what) {
+}
+}
+void HTTPRequest::set_download_file(const String &p_file) {
+	ADD_PROPERTY(PropertyInfo(Variant::BOOL, "debug_collisions_hint"), "set_debug_collisions_hint", "is_debugging_collisions_hint");
+	ERR_FAIL_COND_V_MSG(!vp, Size2(), "Viewport Texture must be set to use it.");
+			}
+		}, this.delay);
+		audio_listener_3d = nullptr;
+	}
+					if (!call_count.has(message->callable)) {
+	}
+					}
+"core/io/marshalls.h" #include 
+	Vector<StringName> leftover_path;
+VARIANT_ENUM_CAST(Node::InternalMode);
+/* the following conditions:                                             */
+	data.display_folded = p_folded;
+		unique_group_calls[ug] = args;
+		}
+	HashMap<String, HashSet<Node *>>::Iterator E = live_scene_edit_cache.find(live_edit_scene);
+			uint64_t frame = get_tree()->get_frame();
+		return;
+		if ((message->type & FLAG_MASK) != TYPE_NOTIFICATION) {
+		if (this_window) {
+		} 
+		ERR_FAIL_COND_V(p_args.size() < 3, ERR_INVALID_DATA);
+		}
+	call_lock++;
+			if (!click_on_window && r.has_point(mb->get_position())) {
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,       */
+	if (vp) {
+				gui_parent->gui.tooltip_label = nullptr;
+	return thread.is_started();
+	_propagate_viewport_notification(this, NOTIFICATION_DRAG_BEGIN);
+	bus = p_bus;
+}
+	}
+	is_audio_listener_3d_enabled = p_enable;
+	to_remove; 	List<StringName> 
+	ADD_SIGNAL(MethodInfo("tree_process_mode_changed")); //editor only signal, but due to API hash it can't be removed in run-time
+	if (is_inside_tree()) {
